@@ -1,0 +1,48 @@
+{
+  "name": "@winner-fed/vue-cli-plugin-eslint",
+  "version": "1.0.0",
+  "description": "eslint plugin for vue-cli",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./**/*.js ./*.js",
+    "jest": "cross-env VUE_CLI_TEST=true jest --runInBand --env=node",
+    "test": "npm run lint && npm run jest"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloud-templates/vue-cli-plugin-eslint.git"
+  },
+  "keywords": [
+    "vue",
+    "cli",
+    "eslint"
+  ],
+  "author": "windraxb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloud-templates/vue-cli-plugin-eslint/issues"
+  },
+  "homepage": "https://github.com/cloud-templates/vue-cli-plugin-eslint#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "chalk": "^4.1.0",
+    "eslint": "^7.2.0",
+    "eslint-loader": "^4.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "inquirer": "^7.3.2",
+    "javascript-stringify": "^2.0.1",
+    "micromatch": "^4.0.2",
+    "vue-eslint-parser": "^7.1.0"
+  },
+  "devDependencies": {
+    "@winner-fed/eslint-config-win": "^1.0.2",
+    "@vue/cli": "^3.3.0",
+    "@vue/cli-service": "^3.0.0-beta.6",
+    "@vue/cli-test-utils": "^3.0.0-beta.6",
+    "cross-env": "^5.2.0",
+    "jest": "^22.4.3"
+  }
+}
